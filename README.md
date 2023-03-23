@@ -1,6 +1,3 @@
----
-title: Predicting Calories Using Tags and Other Attributes
----
 
 ## Introduction
 
