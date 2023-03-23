@@ -1,4 +1,4 @@
-<title> Predicting Calories Using Tags and Other Attributes
+<title> Predicting Calories Using Tags and Other Attributes</title>
 ## Introduction
 
 In this project, we will attempt to **predeict the caloreis of a recipe** through **regression**. 
