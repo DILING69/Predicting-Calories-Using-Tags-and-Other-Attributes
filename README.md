@@ -22,3 +22,11 @@ By running the model multiple times on different training and testing sets, the 
 (Best and worst performances on 20 sets of test data)
 
 Based on the results that we see, I won't say that our Baseline model is performing good. 500 calories is a very large distance, it is approximately the calories of a bowl of pan fried noodles, which is the amount of calories that an adult would take in in a full meal. If the prediction is 500 calories higher than the actual, that means the person may eat less and causing them to not consume enough energy, which could lead to serious health problems. On the other hand, if the prediction is 500 calories lower than the actual, the person will eat too much, which destroys the person's plan to loose weight.
+
+
+## Final Model
+After looking at the performance of our baseline model, we decide to modify it to improve the prediction. For our final model, the first change that we planned to improve our features. We decided to add three new features and modify two features to improve the performance of our model. The three features that we added are `tags`, `total fat (PDV)`, and `carbohydrates (PDV)`. 
+
+The reason that we added `tags` is because we believe that the tags of a recipe could tell us more about the recipe. For example, a recipe that has tag such as 'healthy' is very likely to have low calories, on the other hand, a recipe that has tag such as 'junk food' is more likely to have high calories.
+
+For the second and third features that we added, we chose them because we think they have the most to do with calories when compared to other nutritions that are available (for example, the amount of sodium almost doesn't contribute to calories at all). In the end, we were deciding between which 2 of the 4 (total fat (PDV), saturated fat (PDV), carbohydrates (PDV), sugar (PDV)) should we choose. The problem is that total fat and saturated fat are highly correlated and carbohydrates and sugar are highly correlated as well. In the end, we decided to use `total fat (PDV)` and `carbohydrates (PDV)` because although the other two could tell us more about how healthy a recipe is, what we want is just to predict calories, which we think fits better with `total fat (PDV)` and `carbohydrates (PDV)`. 
