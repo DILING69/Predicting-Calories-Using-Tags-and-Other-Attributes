@@ -2,7 +2,7 @@
 
 Our exploratory data analysis on this dataset can be found at <a href="https://diling69.github.io/General_Study_on_Food_Recipe/">here</a>
 
-## Introduction
+## Framing the Problem
 
 In this project, we will attempt to **predeict the caloreis of a recipe** through **regression**. 
 
