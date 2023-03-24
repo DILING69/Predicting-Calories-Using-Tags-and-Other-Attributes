@@ -1,4 +1,4 @@
-<title> Further Investigation on The Recipe and Rating Dataset: Predicting Calories/title>
+<title> Further Investigation on The Recipe and Rating Dataset: Predicting Calories</title>
 
 Our exploratory data analysis on this dataset can be found at <a href="https://diling69.github.io/General_Study_on_Food_Recipe/">here</a>
 
