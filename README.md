@@ -20,3 +20,4 @@ By running the model multiple times on different training and testing sets, the 
 `'Best performance of our Baseline model is 519.0098969288084, the worst performance is 574.2065724451372'`
 (Best and worst performances on 20 sets of test data)
 
+Based on the results that we see, I won't say that our Baseline model is performing good. 500 calories is a very large distance, it is approximately the calories of a bowl of pan fried noodles, which is the amount of calories that an adult would take in in a full meal. If the prediction is 500 calories higher than the actual, that means the person may eat less and causing them to not consume enough energy, which could lead to serious health problems. On the other hand, if the prediction is 500 calories lower than the actual, the person will eat too much, which destroys the person's plan to loose weight.
