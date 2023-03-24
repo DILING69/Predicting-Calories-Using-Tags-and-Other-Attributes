@@ -4,7 +4,7 @@ Our exploratory data analysis on this dataset can be found at <a href="https://d
 
 ## Framing the Problem
 
-In this project, we will attempt to **predeict the caloreis of a recipe** through **regression**. 
+In this project, we will attempt to **predict the caloreis of a recipe** through **regression**. 
 
 The response variable is the **calories** of each recipe. We chose to predict this variable because calories is a very straightforward and important indicator of the healthiness of a recipe and is especially important to people who are trying to loose weight (me). 
 
@@ -33,7 +33,7 @@ For the second and third features that we added, we chose them because we think 
 
 In addition, we standardized the `n_ingredients` because we felt its range was quite different from the range of the other features we used. 
 
-Next, we move on to model selection. Although linear regression is not bad, we think that there are better options out there. It came down to deciding between two models, K-Nearest Neighbors Regressor and Decision Tree Regressor (An honorable mention is Random Forest Regressor, it performed quite well but due to computing power limitations, we had to give up on that). The major reason we saved K-Nearest Neighbors Regressor to the last round is because it works well with small datasets and thus less likely to overfit. For Decision Tree Regressor, we saved it till last round because it is more robust to outliers. 
+Next, we moved on to model selection. Although linear regression is not bad, we think that there are better options out there. It came down to deciding between two models, K-Nearest Neighbors Regressor and Decision Tree Regressor (An honorable mention is Random Forest Regressor, it performed quite well but due to computing power limitations, we had to give up on that). The major reason we saved K-Nearest Neighbors Regressor to the last round is because it works well with small datasets and thus less likely to overfit. For Decision Tree Regressor, we saved it till last round because it is more robust to outliers. 
 
 In order to decide between the two, we ran each of them for more than 20 times and looked at the best and worst performances. Best performance of our Knn regressor model is 265.5308335680102 and the worst performance is 300.60232588955006. Best performance of our DecisionTree regressor model is 111.72879187941787, the worst performance is 200.0790842745898. As you could see, the KNN regressor model gives more consistant performances. On the other hand, our DecisionTree regressor model gives less consistant performance but performs better overall. Therefore, after serious consideration, we decided to use the DecisionTree regressor model. 
 
